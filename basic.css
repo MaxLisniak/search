@@ -1,0 +1,196 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.page-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1.3fr 1fr 1fr 96px;
+    height: 100vh;
+    font-family: arial, sans-serif;
+}
+@media screen and (max-width: 627px) {
+    .page-container{
+        grid-template-rows: 60px 1.3fr 1fr 1fr 140px;
+    }
+}
+@media screen and (max-width: 402px) {
+    .page-container{
+        grid-template-rows: 60px 1.3fr 1fr 1fr 186px;
+    }
+}
+header{
+    grid-row-start: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    /* height: 60px; */
+}
+header a{
+    font-size: 0.8rem;
+    margin: 0.8em;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+.logo-area{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    /* position: relative; */
+    /* width: max-content; */
+    /* margin: 0 auto; */
+    /* height: calc((100vh - 156px)/3); */
+}
+.google{
+    position: relative;
+    width: max-content;
+}
+.logo{
+    width: 272px;
+    height: 92px;
+}
+/* @media screen and (max-height: 395px) {
+    .logo{
+        width:181px;
+        height:61px;
+    }
+    .label{
+        position:absolute;
+        bottom: -10px;
+        right: 4px;
+        font: 8px roboto-regular, arial, sans-serif;
+        color: #4285f4;
+    }
+} */
+.label{
+    position:absolute;
+    bottom: -10px;
+    right: 4px;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    color: #4285f4;
+}
+#search-form{
+    grid-row-start: 3;
+    /* height: calc((100vh - 156px)/3); */
+    display: inline-grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 44px 58px;
+}
+.search-bar{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.control-bar{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#query-input{
+    width: 500px;
+    border-radius: 25px;
+    border-color: rgb(202, 202, 202);
+    border-width: 1px;
+    border-style:solid;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1em;
+    outline: 0;
+}
+#query-input:hover{
+    box-shadow: 0 0 10px #cfcfcf;
+    border:0;
+}
+#query-input:focus{
+    box-shadow: 0 0 10px #cfcfcf;
+    border:0;
+}
+@media screen and (max-width: 627px) {
+    #query-input{
+        width: 70%;
+    }
+}
+.control-btn{
+    height: 36px;
+    background-color: #f8f9fa;
+    /* background-color: darkseagreen; */
+    border-style: solid;
+    border-color: #f8f9fa;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 8px 8px;
+    border-radius: 5px;
+}
+.control-btn:hover{
+    /* box-shadow: 0 0 2px #cfcfcf; */
+    border: 1px solid #dbdbdb;
+    margin: 9px;  
+    cursor: pointer;
+}
+.free{
+    grid-row-start: 4;
+    /* height: calc((100vh - 156px)/3); */
+}
+footer{
+    grid-row-start: 5;
+}
+.footer1, .footer2{
+    background-color: rgb(242, 242, 242);
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.9rem;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+}
+.footer1{
+    grid-row-start: 5;
+    /* height: 48px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #dadce0;
+}
+.footer1 p{
+    margin-left: 2em;
+}
+.footer2{
+    grid-row-start: 6;
+    min-height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1200px) {
+    .footer2{
+        justify-content: space-evenly;
+    }
+}
+.footer-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-row-start: 6;
+    background-color:rgb(242, 242, 242);
+}
+.footer-right{
+    display: flex;
+    /* justify-content: flex-end; */
+    grid-row-start: 6;
+    background-color:rgb(242, 242, 242);
+}
+.footer-left a{
+    margin: 1em;
+}
+.footer-right a{
+    margin: 1em;
+}

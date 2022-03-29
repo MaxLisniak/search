@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="advanced-search.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="navbar">
+                <div class="home">
+                    <a href="index.html">
+                        <img class="logo" src="img/googlelogo_color_272x92dp.png" alt="Google Logo">
+                    </a>
+                </div>
+                <!-- <a href="index.html">Google Search</a> -->
+                <a href="image-search.html">Images</a>
+            </div>
+            <h1>Advanced Search</h1>
+        </header>
+        <section class="find">
+            <form id="advanced-search-form" action="https://google.com/search">
+                <h2>Find pages with…</h2>
+                <em>To do this in the search box.</em>
+                <label class="search-label" for="query1">all these words:</label>
+                <input class="search-input" type="text" autocomplete="" id="query1" name="as_q">
+                <small>Type the important words: tri-colour rat terrier</small>
+                <label class="search-label" for="query2">this exact word or phrase:</label>
+                <input class="search-input" type="text" autocomplete="" id="query2" name="as_epq">
+                <small>Put exact words in quotes: "rat terrier"</small>
+                <label class="search-label" for="query3">any of these words:</label>
+                <input class="search-input" type="text" autocomplete="" id="query3" name="as_oq">
+                <small>Type OR between all the words you want: miniature OR standard</small>
+                <label class="search-label" for="query4">none of these words:</label>
+                <input class="search-input" type="text" autocomplete="" id="query4" name="as_eq">
+                <small>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</small>
+                <div class="btn-area">
+                    <input type="submit" value="Advanced Search" id="submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="tips">
+            <h2>You can also...</h2>
+            <ul>
+                <li><a href="#">Find pages that are similar to a URL</a></li>
+                <li><a href="#">Search pages that you've visited</a></li>
+                <li><a href="#">Use operators in the search box</a></li>
+                <li><a href="#">Customise your search settings</a></li>
+            </ul>
+        </section>
+        <footer>
+            <div class="footer1">
+                <p>Ukraine</p>
+            </div>
+            <div class="footer2">
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
