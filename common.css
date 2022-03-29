@@ -1,0 +1,10 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.page-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    font-family: arial, sans-serif;
+}

@@ -1,13 +1,5 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
 .page-container{
-    display:grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 60px 1.3fr 1fr 1fr 96px;
-    height: 100vh;
-    font-family: arial, sans-serif;
 }
 @media screen and (max-width: 627px) {
     .page-container{
@@ -19,13 +11,13 @@ body{
         grid-template-rows: 60px 1.3fr 1fr 1fr 186px;
     }
 }
+
 header{
     grid-row-start: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
-    /* height: 60px; */
 }
 header a{
     font-size: 0.8rem;
@@ -33,16 +25,13 @@ header a{
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
 }
+
 .logo-area{
     grid-row-start: 2;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 30px;
-    /* position: relative; */
-    /* width: max-content; */
-    /* margin: 0 auto; */
-    /* height: calc((100vh - 156px)/3); */
 }
 .google{
     position: relative;
@@ -52,19 +41,7 @@ header a{
     width: 272px;
     height: 92px;
 }
-/* @media screen and (max-height: 395px) {
-    .logo{
-        width:181px;
-        height:61px;
-    }
-    .label{
-        position:absolute;
-        bottom: -10px;
-        right: 4px;
-        font: 8px roboto-regular, arial, sans-serif;
-        color: #4285f4;
-    }
-} */
+
 .label{
     position:absolute;
     bottom: -10px;
@@ -74,7 +51,6 @@ header a{
 }
 #search-form{
     grid-row-start: 3;
-    /* height: calc((100vh - 156px)/3); */
     display: inline-grid;
     gap: 15px;
     grid-template-columns: 1fr;
@@ -121,7 +97,6 @@ header a{
 .control-btn{
     height: 36px;
     background-color: #f8f9fa;
-    /* background-color: darkseagreen; */
     border-style: solid;
     border-color: #f8f9fa;
     padding-left: 16px;
@@ -130,15 +105,14 @@ header a{
     border-radius: 5px;
 }
 .control-btn:hover{
-    /* box-shadow: 0 0 2px #cfcfcf; */
     border: 1px solid #dbdbdb;
     margin: 9px;  
     cursor: pointer;
 }
 .free{
     grid-row-start: 4;
-    /* height: calc((100vh - 156px)/3); */
 }
+
 footer{
     grid-row-start: 5;
 }
@@ -153,7 +127,6 @@ footer a{
 }
 .footer1{
     grid-row-start: 5;
-    /* height: 48px; */
     display: flex;
     justify-content: left;
     align-items: center;
@@ -184,7 +157,6 @@ footer a{
 }
 .footer-right{
     display: flex;
-    /* justify-content: flex-end; */
     grid-row-start: 6;
     background-color:rgb(242, 242, 242);
 }
